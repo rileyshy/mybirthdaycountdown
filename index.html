@@ -47,13 +47,13 @@ body, html {
 
 .countdown-container {
     text-align: center;
-    width: 90%; /* Makes it responsive and prevents it from being too wide */
-    max-width: 400px; /* Sets a maximum width for larger screens */
+    width: 90%; /* Makes it responsive for smaller screens */
+    max-width: 500px; /* Caps the width on larger screens */
 }
 
 .countdown {
-    font-size: 2.5rem; /* Adjusted for better scaling on smaller screens */
-    margin: 10px 0;
+    font-size: 3rem; /* Default font size for PC */
+    margin: 20px 0;
 }
 
 .countdown span {
@@ -61,8 +61,8 @@ body, html {
 }
 
 h1 {
-    font-size: 2rem; /* Adjusted for mobile */
-    margin-bottom: 15px;
+    font-size: 2.5rem; /* Default font size for PC */
+    margin-bottom: 10px;
     color: #000000;
 }
 
@@ -70,16 +70,17 @@ h1 span {
     color: #000000;
 }
 
-/* Add padding for smaller screens to ensure proper alignment */
+/* Responsive Design for Mobile Screens */
 @media (max-width: 768px) {
-    body, html {
-        padding: 10px;
-    }
     .countdown {
-        font-size: 2rem; /* Scales down font for smaller screens */
+        font-size: 2rem; /* Scales font size down for mobile */
     }
     h1 {
-        font-size: 1.8rem; /* Scales down font for smaller screens */
+        font-size: 2rem; /* Scales down font size for mobile */
+    }
+    .countdown-container {
+        width: 100%; /* Uses full width on smaller screens */
+        padding: 0 10px; /* Adds some padding for better alignment */
     }
 }
 
