@@ -26,14 +26,14 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Stacks elements vertically */
+    flex-direction: column;
     height: 100vh;
     background: linear-gradient(90deg, #00bfff, #ff4500);
     background-size: 200% 200%;
     animation: gradientMove 5s infinite alternate;
     color: #0f0;
     text-align: center;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden;
 }
 
 @keyframes gradientMove {
@@ -47,12 +47,12 @@ body, html {
 
 .countdown-container {
     text-align: center;
-    width: 90%; /* Makes it responsive for smaller screens */
-    max-width: 500px; /* Caps the width on larger screens */
+    width: 90%; /* Responsive width */
+    max-width: 500px; /* Caps width for larger screens */
 }
 
 .countdown {
-    font-size: 3rem; /* Default font size for PC */
+    font-size: 3rem;
     margin: 20px 0;
 }
 
@@ -61,7 +61,7 @@ body, html {
 }
 
 h1 {
-    font-size: 2.5rem; /* Default font size for PC */
+    font-size: 2.5rem;
     margin-bottom: 10px;
     color: #000000;
 }
@@ -73,17 +73,16 @@ h1 span {
 /* Responsive Design for Mobile Screens */
 @media (max-width: 768px) {
     .countdown {
-        font-size: 2rem; /* Scales font size down for mobile */
+        font-size: 2rem; /* Adjust font size for mobile */
     }
     h1 {
-        font-size: 2rem; /* Scales down font size for mobile */
+        font-size: 2rem; /* Adjust font size for mobile */
     }
     .countdown-container {
-        width: 100%; /* Uses full width on smaller screens */
-        padding: 0 10px; /* Adds some padding for better alignment */
+        width: 100%; /* Full width for smaller screens */
+        padding: 0 10px; /* Adds padding for better alignment */
     }
 }
-
     </style>
 </head>
 <body>
